@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="home-logic.js"></script>
+    <script src="calc-logic.js"></script>
+ 
+    <title>Login Page with Calculator</title>
+</head>
+<body>
+    <div class="container" id="id01">
+
+    <div class="navbar-container">
+        <div class="topnav">
+            <!-- <a href="#home" class="active">Home
+            </a> -->
+            <button onclick="document.getElementById('main').style.display='block'" style="width: auto;">Login</button>
+        </div>
+        
+	<div id="main">
+       
+        <div class="h-tag">
+        <h2>Welcome To Login Page</h2>
+        </div>
+        <div class="login">
+       
+       
+            <form id="loform" action="calculator.html" method="get">
+                <input id="email" type="email" name="uname" />
+                <input id="pwd" type="password" name="pwd" />
+                <input type="submit"  value="Login" class="btn" onclick="login(uname, pwd)" />
+                <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+            </form>
+       
+       
+        </div>
+        </div>
+    </div>   
+</div>
+
+</body>
+</html>
